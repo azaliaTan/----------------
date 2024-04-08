@@ -1,0 +1,2263 @@
+:root {
+    --font-family-g: 'Cormorant Garamond', sans-serif;
+    --font-family-c: 'Comfortaa', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+ul, li {
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+input,textarea{
+    border: none;
+    background-color: inherit;
+}
+
+/*ШАПКА*/
+#burger, [for=burger], nav{
+    display: none;
+}
+
+.header-ul{
+   margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap; 
+}
+
+.logo p{
+    font-size: 60px;
+    font-family: var(--font-family-g);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+.icons{
+    display: flex;
+}
+.icons img {
+    display: flex;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.nav {
+    font-size: 17px;
+    font-weight: 500;
+    font-family: var(--font-family-c);
+    text-transform: uppercase;
+    
+}
+
+
+.nav a{
+    margin-right: 30px
+}
+
+.nav a:hover{
+    font-weight: 750;
+}
+
+
+
+/*--------------ШАПКА--------------------------------------*/
+
+
+/*баннер*/
+
+.banner{
+    position: relative;
+}
+   
+   
+
+
+.kartinka{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+}
+
+.kartinka img{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    
+}
+
+.text_bane{
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    right: 43%;
+    
+
+}
+.text_bane p{
+    font-size: 80px;
+    font-weight: 650;
+    text-transform: uppercase;
+    font-family: var(--font-family-g);
+    letter-spacing: 5px;
+
+}
+
+.text_bane button{
+    font-size: 30px;
+    font-weight: 450;
+    background-color: white;
+    border: 2px solid black;
+    font-family: var(--font-family-c);
+    padding: 25px 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+      cursor: pointer;
+
+}
+
+.text_bane button:hover{
+    
+    background-color: rgb(0, 0, 0);
+    border: 2px solid black;
+    color: white;
+    transition: all .5s ease;
+
+}
+
+
+
+/*каталог*/
+
+#zagolovok{
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+    font-weight: 450;
+    font-family: var(--font-family-c);
+    margin: 80px 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.katalog_cards{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    font-family: var(--font-family-c);
+    flex-wrap: wrap;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    gap: 25px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.card_img{
+    position: relative;
+}
+
+#izb{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+#tovar{
+    width: 400px;
+    height: 400px;
+}
+.card_text p{
+    padding: 8px;
+}
+
+#name_firma{
+    font-size: 20px;
+}
+
+#name_tovar{
+    font-size: 20px;
+}
+
+#price{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card_text button{
+    font-size: 16px;
+    
+    background-color: white;
+    border: 2px solid black;
+    
+    padding: 10px 60px;
+    
+    letter-spacing: 3px;
+      cursor: pointer;
+      text-transform: uppercase;
+
+}
+
+.card_text button:hover{
+    
+    background-color: rgb(0, 0, 0);
+    border: 2px solid black;
+    color: white;
+    transition: all .5s ease;
+
+}
+
+#but{
+    display: none;
+}
+
+
+/*--------------каталог--------------------------------------*/
+
+/*вопросы*/
+
+.vopr{
+    background-color: rgba(255, 199, 209, 0.56);
+    width: 100%;
+    height: auto;
+    margin: 80px 0 60px 0;
+    padding-top: 40px;
+
+}
+
+.anketa{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: var(--font-family-c);
+    gap: 150px;
+
+}
+.anketa_img img{
+    width: 100%;
+    height: auto;
+}
+.anketa_text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: right;
+    gap: 70px;
+   
+
+}
+
+#zagol{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+   margin-top: 60px;
+   
+}
+
+
+
+.anketa_text input, textarea{
+    padding: 20px 150px;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    border-bottom: 3px solid #333;
+   
+   
+}
+
+.anketa_text button{
+    font-size: 16px;
+    
+    background-color: white;
+    border: 2px solid black;
+    
+    padding: 15px 60px;
+    
+    letter-spacing: 3px;
+      cursor: pointer;
+      text-transform: uppercase;
+
+}
+
+.anketa_text button:hover{
+    
+    background-color: rgb(0, 0, 0);
+    border: 2px solid black;
+    color: white;
+    transition: all .5s ease;
+
+}
+
+
+
+/*--------------вопросы--------------------------------------*/
+
+/*футер*/
+.footer_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 40px;
+  
+}
+
+#logo{
+    font-size: 60px;
+    font-family: var(--font-family-g);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    cursor: pointer;
+
+}
+
+.nav_footer{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.nav_footer a{
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: var(--font-family-c);
+    letter-spacing: 3px;
+    font-family: 550;
+}
+.icons_footer{
+    width: 40px;
+    height: auto;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tt{
+    display: flex;
+    gap: 20px;
+}
+#zx, .footer_text a{
+    font-size: 20px;
+    font-family: var(--font-family-c);
+    letter-spacing: 2px;
+    font-weight: 450;
+    text-transform: uppercase;
+}
+
+
+/*--------------футер--------------------------------------*/
+/*товар*/
+.tovar{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 65px;
+
+
+    
+}
+.tovar_img{
+    position: relative;
+}
+
+#tovark{
+    width: auto;
+    height: 600px;
+    
+}
+#wer{
+    display: none;
+}
+#tovarl{
+    position: absolute;
+    top: 10%;
+    left: 85%;
+
+    width: 70px;
+}
+
+.tovar_text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+   
+}
+
+.tovar_text_naz p{
+    font-size: 40px;
+    font-weight: 550;
+    font-family: var(--font-family-c);
+    text-transform: uppercase;
+    margin: 13px 0;
+    letter-spacing: 4px;
+    
+}
+
+.tovar_text_opis{
+    margin-top: 35px;
+}
+
+.tovar_text_opis p{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.64);
+    font-family: var(--font-family-c);
+    padding-top: 14px;
+}
+
+.tovar_text button{
+    font-size: 25px;
+    
+    background-color: white;
+    border: 2px solid black;
+    
+    padding: 10px;
+    margin-top: 50px;
+    letter-spacing: 3px;
+      cursor: pointer;
+      text-transform: uppercase;
+
+}
+
+.tovar_text button:hover{
+    
+    background-color: rgb(0, 0, 0);
+    border: 2px solid black;
+    color: white;
+    transition: all .5s ease;
+
+}
+
+
+.opisanie p{
+    font-family: var(--font-family-c);
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 3px;
+    font-weight: 550;
+    margin-top: 80px;
+}
+
+.opisanie_text{
+    font-size: 16px;
+    font-family: var(--font-family-c);
+    text-transform: uppercase;
+    margin-top: 40px;
+    line-height:27px;
+}
+#ra{
+    font-family: var(--font-family-c);
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 3px;
+    font-weight: 650;
+    margin:25px 0 150px 0;
+    cursor: pointer;
+
+}
+#ra:hover{
+    font-size: 16px;
+}
+/*--------------товар--------------------------------------*/
+
+/*панель*/
+
+#pan{
+    font-family: var(--font-family-c);
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 3px;
+    font-weight: 550;
+    margin-top: 80px;
+}
+
+.name_pan{
+     display: flex;
+     justify-content: left;
+     gap: 70px;
+     margin: 50px 0 80px 0;
+}
+.name_pan p{
+    font-family: var(--font-family-c);
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+.panel
+{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+.pan_tovar{
+    display: flex;
+    justify-content: space-between;
+    padding:15px 40px 15px 40px;
+    border: 2px solid black;
+    font-family: var(--font-family-c);
+}
+.pan_tovar_name{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+.pan_tovar_name p{
+    gap: 25px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: rgba(0, 0, 0, 0.64);
+}
+#a{
+    font-size: 16px;
+}
+
+.pan_img{
+    object-fit: cover;
+
+}
+
+.pan_icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    cursor: pointer;
+
+}
+.pagi{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--font-family-c);
+    font-size: 23px;
+    gap: 15px;
+    margin: 55px 0 60px 0;
+    cursor: pointer;
+}
+.pagi p:hover{
+    font-size: 25px;
+}
+
+.pan_kat{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    
+  
+   
+
+}
+.kategori{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 50px;
+    font-family: var(--font-family-c);
+    color: rgba(0, 0, 0, 0.64);
+    text-transform: uppercase;
+    font-size: 25px;
+    padding: 60px 100px 60px 100px;
+    border: 2px black solid;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+.icon_kat{
+    display: flex;
+    gap: 45px;
+    cursor: pointer;
+}
+/*--------------панель--------------------------------------*/
+.forma{
+    max-width: 750px;
+    margin: 0 auto;
+}
+#formp{
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 50px 0 70px 0;
+    font-family: var(--font-family-c);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+
+#red{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    gap: 20px;
+   
+   
+}
+#red  input{
+    border: 2px solid black;
+    padding: 25px 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: var(--font-family-c);
+    text-align: center;
+
+    
+}
+
+#red p{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: var(--font-family-c);
+   
+}
+#sohr{
+    font-size: 35px;
+    
+    background-color: white;
+    border: 2px solid black;
+    font-weight: 600;
+    padding: 10px;
+    margin: 50px 0;
+    letter-spacing: 3px;
+      cursor: pointer;
+      text-transform: uppercase;
+
+}
+
+#sohr:hover{
+    
+    background-color: rgb(0, 0, 0);
+    border: 2px solid black;
+    color: white;
+    transition: all .5s ease-in-out;
+
+}
+#vhod{
+    font-size: 35px;
+    
+    background-color: white;
+    border: 2px solid black;
+    font-weight: 600;
+    padding: 10px;
+    margin: 50px 0 20px 0;
+    letter-spacing: 3px;
+      cursor: pointer;
+      text-transform: uppercase;
+
+}
+
+#vhod:hover{
+    
+    background-color: rgb(0, 0, 0);
+    border: 2px solid black;
+    color: white;
+    transition: all .5s ease;
+
+}
+.pv{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 18px;
+}
+.pv p,a{
+    
+    font-family: var(--font-family-c);
+    text-transform: uppercase;
+   
+}
+.pv a:hover{
+    text-decoration: underline;
+    
+}
+
+.udal{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family-c);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 150px;
+}
+
+.udal p{
+    font-size: 40px;
+}
+#td{
+    font-size: 35px;
+    color: rgba(0, 0, 0, 0.64);
+    margin:40px 0 150px 0;
+}
+.knop{
+    display: flex;
+    gap: 200px;
+    margin-bottom: 100px;
+}
+
+.knop button{
+    border: 2px solid black;
+    padding: 40px 65px;
+    font-size: 25px;
+    background-color: white;
+    font-family: var(--font-family-c);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.knop button:hover{
+    
+    background-color: rgb(0, 0, 0);
+    border: 2px solid black;
+    color: white;
+    transition: all .5s ease;
+
+}
+
+@media (max-width: 2000px) {
+    .text_bane{
+
+        top: 35%;
+        right: 41%;
+        
+    
+    }
+
+}
+@media (max-width: 1700px) {
+    .text_bane{
+
+        top: 35%;
+        right: 39%
+        
+    
+    }
+
+}
+@media (max-width: 1440px) {
+
+    .container{
+        max-width: 1200px;
+    }
+
+    .katalog_cards{
+        gap: 80px;
+    }
+    #zagolovok{
+        font-size: 27px;
+        margin: 70px 0;
+    }
+    
+    #tovar{
+        width: 300px;
+        height: 300px;
+    }
+
+    .card_text button{
+        font-size: 15px;
+        padding: 10px 50px;
+    
+    }
+
+    .anketa{
+
+    gap: 50px;
+
+}
+.text_bane{
+
+    top: 35%;
+    right: 39%
+    
+
+}
+.text_bane p{
+    font-size: 70px;
+
+}
+
+.text_bane button{
+    font-size: 27px;
+    padding: 23px 37px;
+
+}
+
+.tovar{
+    gap: 25px;
+   margin: 55px 0;
+}
+.tovar_text_naz p{
+    font-size: 30px;
+    
+    letter-spacing: 3px;
+    
+}
+
+.forma{
+    max-width: 550px;
+}
+#formp{
+    font-size: 30px;}
+
+#red p{
+    font-size: 22px;
+}
+
+#sohr{
+    font-size: 30px;
+}
+#vhod{
+    font-size: 30px;
+}
+   
+}
+
+
+@media (max-width: 1250px) {
+
+    .container{
+        max-width: 1000px;
+    }
+    .vopr{
+       
+        
+        padding-top: 30px;
+    
+    }
+    #zagol{
+        font-size: 30px;
+       margin-top: 50px;
+       
+    }
+    .anketa_text{
+        gap: 50px;
+    }
+    
+    .anketa_text input, textarea{
+    padding: 20px 130px;
+    font-size: 20px;
+   
+}
+.anketa_text button{
+    font-size: 16px;
+    padding: 15px 55px;
+    
+}
+.anketa_img img{
+    width: 100%;
+    height: auto;
+}
+.text_bane{
+
+    top: 35%;
+    right: 39%;
+    gap: 50px;
+    
+
+}
+.text_bane p{
+    font-size: 60px;
+   
+
+}
+
+.text_bane button{
+    font-size: 25px;
+    padding: 21px 35px;
+
+}
+.tovar{
+
+    margin: 50px 0;
+
+
+    
+}
+
+#tovark{
+    width: auto;
+    height: 500px;
+    
+}
+
+.udal{
+    margin-top: 110px;
+}
+
+.udal p{
+    font-size: 30px;
+}
+#td{
+    font-size: 25px;
+    margin:30px 0 120px 0;
+}
+.knop{
+    gap: 150px;
+}
+
+.knop button{
+    padding: 35px 50px;
+    font-size: 22px;
+    
+}
+
+}
+
+@media (max-width: 1100px) {
+
+    .container{
+        max-width: 950px;
+    }
+    
+    .logo p{
+        font-size: 47px;}
+    .nav{
+        font-size:15px;
+    }
+    .vopr{
+       
+        margin: 60px 0 40px 0;
+        padding-top: 20px;
+    
+    }
+
+    .anketa_text{
+        gap: 40px;
+    }
+    #zagol{
+        font-size: 27px;
+       margin-top: 40px;
+       
+    }
+    
+    .anketa_text input, textarea{
+    padding: 20px 110px;
+    font-size: 18px;
+   
+}
+.anketa_text button{
+    font-size: 16px;
+    padding: 15px 55px;
+    
+}
+.footer_text{
+    gap: 30px;
+}
+#logo{
+    font-size: 44px;
+
+}
+.nav_footer{
+    gap: 20px;
+}
+.nav_footer a{
+    font-size: 13px;
+}
+.icons_footer{
+   
+    gap: 25px;
+}
+.icons_footer img{
+    width: 30px;
+  
+}
+#zx, .footer_text a{
+    font-size: 11px;
+
+}
+.text_bane{
+
+    top: 35%;
+    right: 37%;
+    gap: 50px;
+    
+
+}
+.text_bane p{
+    font-size: 60px;
+   
+
+}
+
+.text_bane button{
+    font-size: 25px;
+    padding: 21px 35px;
+
+}
+
+#tovark{
+    width: auto;
+    height: 450px;
+    
+}
+.tovar_text_opis{
+    margin-top: 15px;
+}
+
+.tovar{
+
+    margin: 45px 0;
+
+
+    
+}
+.opisanie p{
+    
+    font-size: 25px;
+    margin-top: 70px;
+}
+
+.opisanie_text{
+    font-size: 13px;
+    margin-top: 30px;
+    line-height:25px;
+}
+#ra{
+   
+    font-size: 12px;
+    margin:25px 0 130px 0;
+   
+}
+
+.forma{
+    max-width: 500px;
+}
+#formp{
+    font-size: 29px;
+    margin: 30px 0 50px 0;
+
+}
+
+#red{
+    gap: 15px;
+   
+   
+}
+#red  input{
+    
+    padding: 10px 0;
+   
+    font-size: 19px;
+    
+}
+
+#red p{
+    font-size: 18px;
+
+}
+#sohr{
+    font-size: 28px;
+    padding: 10px;
+    margin: 40px 0;
+
+}
+
+#vhod{
+    font-size: 28px;
+    padding: 10px;
+    margin:40px 0 14px 0 ;
+}
+
+.pv{
+    font-size: 13px ;
+    margin-bottom: 50px;
+}
+
+
+
+}
+
+@media (max-width: 1024px) {
+
+    .container{
+        max-width: 870px;
+    }
+    .logo p{
+        font-size: 40px;}
+    .nav{
+        font-size:12px;
+    }
+    .nav a{
+        margin-right: 20px;
+    }
+    .icons img {
+        width: 30px;
+        margin: 0 10px;
+    }
+    #zagolovok{
+        font-size: 24px;
+        margin: 50px 0;
+    }
+    .katalog_cards{
+        gap: 60px;
+    }
+
+    #tovar{
+        width: 250px;
+        height: 250px;
+    }
+   
+    .card_text p{
+        padding: 5px;
+    }
+
+    #name_firma{
+        font-size: 16px;
+    }
+    
+    #name_tovar{
+        font-size: 16px;
+    }
+    
+    #price{
+        font-size: 19px;
+        margin-bottom: 8px;
+    }
+
+    .card_text button{
+        font-size: 14px;
+        padding: 10px 45px;
+        border: 1px solid black;
+    }
+    .anketa_text{
+        gap: 40px;
+    }
+    #zagol{
+        font-size: 25px;
+       margin-top: 30px;
+       
+    }
+    
+    .anketa_text input, textarea{
+    padding: 20px 100px;
+    font-size: 16px;
+   
+}
+.anketa_text button{
+    font-size: 15px;
+    padding: 15px 55px;
+    
+}
+.text_bane{
+
+    top: 35%;
+    right: 37%;
+    gap: 40px;
+    
+
+}
+.text_bane p{
+    font-size: 50px;
+   
+
+}
+.tovar{
+
+    margin: 30px 0 50px 0;
+
+
+    
+}
+#tovarl{
+
+    width: 50px;
+}
+
+.text_bane button{
+    font-size: 22px;
+    padding: 18px 30px;
+
+}
+
+.tovar_text_naz p{
+    font-size: 29px;
+    margin: 10px 0;
+}
+
+.tovar_text_opis{
+    margin-top: 3px;
+}
+.tovar_text button{
+    font-size: 20px;
+    padding: 8px;
+    margin-top: 30px;
+}
+#pan{
+    font-size: 30px;
+}
+.name_pan{
+    margin: 40px 0 60px 0;
+}
+.name_pan p{
+    font-size: 25px;
+}
+.panel{
+    gap: 30px;
+}
+.pan_tovar{
+    padding: 13px 35px;
+}
+.pan_tovar_name p{
+    font-size: 18px;
+}
+.pan_img img{
+    width: 100px;
+}
+#a{
+    font-size: 15px;
+}
+.pan_icons img{
+    width: 37px;
+}
+.kategori{
+    gap: 37px;
+    font-size: 21px;
+    padding: 30px 60px;
+    margin-top: 20px;
+}
+.icon_kat img{
+    width: 37px;
+}
+.udal{
+    margin-top: 80px;
+}
+
+.udal p{
+    font-size: 25px;
+}
+#td{
+    font-size: 22px;
+    margin:27px 0 100px 0;
+}
+.knop{
+    gap: 120px;
+}
+
+.knop button{
+    padding: 25px 40px;
+    font-size: 20px;
+    
+}
+.knop{
+    
+    margin-bottom: 90px;
+}
+}
+    
+
+@media (max-width: 920px) {
+
+    .container{
+        max-width: 780px;
+    }
+    .kategori{
+        gap: 30px;
+        font-family: var(--font-family-c);
+        font-size: 19px;
+        padding: 30px 45px;
+        margin-top: 15px;
+    }
+    .icon_kat img{
+        width: 32px;
+    }
+}
+   
+
+
+@media (max-width: 870px) {
+
+    .container{
+        max-width: 650px;
+    }
+    .logo p{
+        font-size: 30px;}
+    .nav{
+        font-size:11px;
+    }
+    .nav a{
+        margin-right: 10px;
+    }
+    .icons img {
+        width: 25px;
+        margin: 0 10px;
+    }
+    #zagolovok{
+        font-size: 20px;
+        margin: 40px 0;
+    }
+    
+
+    .katalog_cards{
+        gap: 45px;
+    }
+
+    #tovar{
+        width: 220px;
+        height: 220px;
+    }
+   
+    .card_text p{
+        padding: 5px;
+    }
+
+    #name_firma{
+        font-size: 14px;
+    }
+    
+    #name_tovar{
+        font-size: 14px;
+    }
+    
+    #price{
+        font-size: 17px;
+        margin-bottom: 7px;
+    }
+
+    .card_text button{
+        font-size: 13px;
+        padding: 10px 40px;
+       
+    }
+
+    .anketa_text{
+        gap: 27px;
+    }
+    #zagol{
+        font-size: 23px;
+       margin-top: 25px;
+       
+    }
+    
+    .anketa_text input, textarea{
+    padding: 12px 70px;
+    font-size: 13px;
+   
+}
+.anketa_text button{
+    font-size: 14px;
+    padding: 10px 50px;
+    
+}
+
+.tovar{
+    flex-direction: column;
+    gap: 30px;
+    margin: 20px 0 40px 0;
+    
+}
+.tovar_img{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#tovarl{
+ 
+    left: 80%;
+
+    width: 45px;
+}
+.tovar_text_naz p{
+    font-size: 27px;
+   
+    margin: 10px 0; 
+}
+.tovar_text_opis{
+    margin-top: 12px;
+}
+.tovar_text_opis p{
+    font-size: 11px;
+    padding-top: 8px;
+}
+.tovar_text button{
+    font-size: 17px;
+}
+.opisanie p{
+    
+    font-size: 22px;
+    margin-top: 60px;
+}
+
+.opisanie_text{
+    font-size: 12px;
+    margin-top: 25px;
+    line-height:23px;
+}
+#ra{
+   
+    font-size: 11px;
+    margin:20px 0 110px 0;
+   
+}
+.icon_kat img{
+    width: 30px;
+}
+.kategori{
+    gap: 28px;
+    font-size: 18px;
+    padding: 25px 50px;
+    margin-top: 13px;
+}
+#logo{
+    font-size: 40px;
+}
+.udal{
+    margin-top: 65px;
+}
+
+.udal p{
+    font-size: 22px;
+}
+#td{
+    font-size: 20px;
+    margin:25px 0 80px 0;
+}
+.knop{
+    gap: 90px;
+}
+
+.knop button{
+    padding: 15px 30px;
+    font-size: 18px;
+    
+}
+.knop{
+    
+    margin-bottom: 70px;
+}
+}
+@media (max-width: 800px) {
+
+.text_bane{
+
+    top: 35%;
+    right: 35%;
+    gap: 40px;
+    
+
+}
+.text_bane p{
+    font-size: 45px;
+   
+
+}
+
+.text_bane button{
+    font-size: 18px;
+    padding: 14px 25px;
+
+}
+
+.forma{
+    max-width: 400px;
+}
+#formp{
+    font-size: 25px;
+    margin: 20px 0 40px 0;
+
+}
+
+#red{
+    gap: 13px;
+   
+   
+}
+#red  input{
+    
+    padding: 9px 0;
+   
+    font-size: 15px;
+    
+}
+
+#red p{
+    font-size: 15px;
+
+}
+#sohr{
+    font-size: 24px;
+    padding: 10px;
+    margin: 30px 0;
+
+}
+
+#vhod{
+    font-size: 24px;
+    padding: 10px;
+    margin: 30px 0 9px 0;
+}
+.pv{
+    font-size: 11px;
+    margin-bottom: 40px;
+}
+    
+
+}
+@media (max-width: 680px) {
+
+    .container{
+        max-width: 550px;
+    }
+    .logo p{
+        font-size: 25px;}
+    .nav{
+        font-size:11px;
+    }
+    .nav a{
+        margin-right: 10px;
+    }
+    .icons img {
+        width: 25px;
+        margin: 0 10px;
+    }
+      .vopr{
+        margin: 30px 0 30px 0;
+      }
+    .anketa_text{
+        gap: 20px;
+    }
+    #zagol{
+        font-size: 20px;
+       margin-top: 22px;
+       
+    }
+    
+    .anketa_text input, textarea{
+    padding: 10px 60px;
+    font-size: 12px;
+    border-bottom: 2px solid black;
+   
+}
+.anketa_text button{
+    font-size: 13px;
+    padding: 9px 45px;
+    
+}
+.footer_text{
+    gap: 20px;
+}
+#logo{
+    font-size: 35px;
+
+}
+.nav_footer{
+    gap: 15px;
+}
+.nav_footer a{
+    font-size: 14px;
+}
+.icons_footer{
+  
+    gap: 20px;
+}
+.icons_footer img{
+    width: 25px;
+  
+}
+#zx, .footer_text a{
+    font-size: 12px;
+
+}
+
+.text_bane{
+
+    top: 35%;
+    right: 35%;
+    gap: 25px;
+    
+
+}
+.text_bane p{
+    font-size: 35px;
+   
+
+}
+
+.text_bane button{
+    font-size: 15px;
+    padding: 10px 20px;
+
+}
+.tovar{
+
+    margin: 15px 0 30px 0;
+
+
+    
+}
+.tovar_text_naz p{
+    font-size: 25px;
+   
+    margin: 9px 0; 
+}
+.tovar_text_opis{
+    margin-top: 13px;
+}
+.tovar_text_opis p{
+    font-size: 10px;
+    padding-top: 8px;
+}
+.tovar_text button{
+    font-size: 15px;
+}
+
+.opisanie p{
+    
+    font-size: 23px;
+    margin-top: 60px;
+}
+
+.opisanie_text{
+    font-size: 12px;
+    margin-top: 25px;
+    line-height:22px;
+}
+#ra{
+   
+    font-size: 11px;
+    margin:25px 0 70px 0;
+   
+}
+.pan_tovar_name p{
+    gap: 16px;
+    font-size: 16px;
+}
+.pan_img{
+    object-fit: cover;
+
+}
+.pan_img img{
+    width: 80px;
+}
+.pan_icons{
+    gap: 30px;
+   
+
+}
+.pan_icons img{
+    width: 30px;
+   
+
+}
+.kategori{
+    font-size: 16px;
+    padding: 30px 60px;
+}
+.icon_kat{
+    gap: 30px;
+   
+
+}
+.icon_kat img{
+    width: 30px;
+   
+
+}
+.udal{
+    margin-top: 60px;
+}
+
+.udal p{
+    font-size: 17px;
+}
+#td{
+    font-size: 15px;
+    margin:20px 0 70px 0;
+}
+.knop{
+    gap: 60px;
+}
+
+.knop button{
+    padding: 10px 28px;
+    font-size: 15px;
+    
+}
+.knop{
+    
+    margin-bottom: 60px;
+}
+
+
+}
+
+@media (max-width: 550px) {
+
+    .container{
+        max-width: 380px;
+    }
+
+
+   .nav{
+    display: none;
+   }
+
+   .icons{
+    display: none;
+   }
+
+
+
+
+   [for=burger]{
+    display: block;
+    position: fixed;
+    width: 45px;
+    right: 20px;
+    top: 20px;
+}
+
+[for=burger]::before{
+    content: '=';
+    font-size: 25px;
+}
+nav{
+    border: 1px solid black;
+    display: none;
+    position: fixed;
+    top: 10%;
+    width: 40%;
+    right: 10%;
+    background: rgba(255, 255, 255, 0.877);
+    height: auto;
+    z-index: 1;
+  
+}
+nav a{
+    font-size: 10px;
+   
+}
+
+#burger:checked + label + nav{
+    display: block;
+    animation: show .5s;
+}
+#burger:checked+[for=burger]::before{
+
+    content: '×';
+    font-size: 30px;
+
+}
+@keyframes show{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+ #zagolovok{
+    font-size: 18px;
+    margin: 30px 0;
+}
+
+   .katalog_cards{
+    gap: 50px;
+}
+
+#tovar{
+    width: 150px;
+    height: 150px;
+}
+
+.card_text p{
+    padding: 3px;
+}
+#izb{
+    display: none;
+}
+
+#name_firma{
+    font-size: 12px;
+}
+
+#name_tovar{
+    font-size: 12px;
+}
+
+#price{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.card_text button{
+    font-size: 11px;
+    padding: 10px 30px;
+   
+}
+#but{
+    display: block;
+    margin-top: 10px;
+    padding: 10px 22px;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+.anketa_img img{
+   display: none;
+}
+.anketa{
+    gap: 0;
+}
+
+.anketa_text{
+    justify-content: center;
+    gap: 15px;
+}
+#zagol{
+    font-size: 15px;
+   margin-top: 13px;
+   
+}
+
+.anketa_text input, textarea{
+padding: 10px 50px;
+font-size: 11px;
+border-bottom: 1px solid black;
+
+}
+.anketa_text button{
+font-size: 12px;
+padding: 5px 45px;
+border: 1px solid black;
+margin-bottom: 20px;
+
+}
+.footer_text{
+    gap: 25px;
+}
+#logo{
+    font-size: 28px;
+
+}
+.nav_footer{
+    gap: 13px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.nav_footer a{
+    font-size: 12px;
+}
+.icons_footer{
+  
+    gap: 15px;
+}
+.icons_footer img{
+    width: 25px;
+  
+}
+.tt{
+    flex-direction: column;
+}
+#zx, .footer_text a{
+    font-size: 12px;
+
+}
+.tovar{
+
+    margin: 5px 0 20px 0;
+
+
+    
+}
+#tovark{
+    width: auto;
+    height: 350px;
+    
+}
+#wer{
+    display: block;
+    margin-top: 15px;
+}
+#tovarl{
+    display: none;
+
+}
+.tovar_text_naz p{
+    font-size: 23px;
+   
+    margin: 6px 0; 
+}
+.tovar_text_opis{
+    margin-top: 10px;
+}
+.tovar_text_opis p{
+    font-size: 9px;
+    padding-top: 6px;
+}
+.tovar_text button{
+    font-size: 14px;
+}
+.opisanie p{
+    
+    font-size: 20px;
+    margin-top: 45px;
+}
+
+.opisanie_text{
+    font-size: 10px;
+    margin-top: 20px;
+    line-height:20px;
+}
+#ra{
+   
+    font-size: 11px;
+    margin:17px 0 60px 0;
+   
+}
+#pan{
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+.name_pan{
+    gap: 40px;
+    margin: 30px 0 30px 0;
+}
+.name_pan p{
+   font-size: 18px;
+}
+.name_pan img{
+    width: 30px;
+}
+.panel{
+    gap: 25px;
+}
+.pan_tovar{
+    padding: 19px 30px;
+}
+.pan_img{
+    display: none;
+
+}
+.pan_tovar_name p{
+    gap: 10px;
+    font-size: 13px;
+}
+#a{
+    font-size: 10px;
+}
+.pan_icons img{
+    gap: 15px;
+    width: 28px;
+
+}
+.pagi{
+    font-size: 19px;
+    gap: 12px;
+    margin: 40px 0 50px 0;
+
+}
+.pagi p:hover{
+    font-size: 22px;
+}
+
+.pan_kat{
+    gap: 20px;
+}
+.kategori{
+   
+    gap: 25px;
+    font-size: 16px;
+    padding: 25px 50px ;
+    margin-top: 20px;
+}
+.icon_kat{
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+.icons_kat img{
+    width: 29px;
+}
+
+.forma{
+    max-width: 300px;
+}
+#formp{
+    font-size: 17px;
+    margin: 20px 0 30px 0;
+
+}
+
+#red{
+    gap: 10px;
+   
+   
+}
+#red  input{
+    
+    padding: 8px 0;
+   
+    font-size: 12px;
+    
+}
+
+#red p{
+    font-size: 10px;
+
+}
+#sohr{
+    font-size: 21px;
+    padding: 10px;
+    margin: 25px 0;
+
+}
+
+#vhod{
+    font-size: 21px;
+    padding: 10px;
+    margin: 25px 0 7px 0;
+}
+.pv{
+    font-size: 9px;
+    margin-bottom: 30px;
+}
+   
+}
+
+@media (max-width: 480px) {
+
+.text_bane{
+
+    top: 35%;
+    right: 35%;
+    gap: 20px;
+    
+
+}
+.text_bane p{
+    font-size: 20px;
+   
+
+}
+
+.text_bane button{
+    font-size: 13px;
+    padding: 9px 16px;
+
+}
+#ra{
+   
+    font-size: 11px;
+    margin:17px 0 60px 0;
+   
+}
+#pan{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.name_pan{
+    gap: 30px;
+    margin: 20px 0 20px 0;
+}
+.name_pan p{
+   font-size: 15px;
+}
+.name_pan img{
+    width: 25px;
+}
+.panel{
+    gap: 20px;
+}
+.pan_tovar{
+    padding: 15px 25px;
+}
+.pan_icons img{
+    width: 20px;
+}
+.icon_kat img{
+    width: 20px;
+}
+.udal{
+    margin-top: 40px;
+}
+
+.udal p{
+    font-size: 15px;
+}
+#td{
+    font-size: 16px;
+    margin:20px 0 50px 0;
+}
+.knop{
+    gap: 70px;
+}
+
+.knop button{
+    padding: 15px 20px;
+    font-size: 12px;
+    
+}
+.knop{
+    
+    margin-bottom: 50px;
+}
+}
+
+@media (max-width: 400px) {
+
+    .container{
+        max-width: 310px;
+    }
+    .katalog_cards{
+        gap: 30px;
+    }
+    #zagolovok{
+        font-size: 16px;
+        margin: 25px 0;
+    }
+    .text_bane{
+
+        top: 35%;
+        right: 30%;
+        gap: 9px;
+    
+        
+    
+    }
+
+    .text_bane button{
+        font-size: 9px;
+        padding: 5px 10px;
+    
+    }
+    #tovark{
+        width: auto;
+        height: 280px;
+        
+    }
+    .pan_tovar{
+        padding: 12px 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container{
+        max-width: 280px;
+    }
+    .pan_tovar_name p{
+      
+        font-size: 10px;
+       
+    }
+    #a{
+        font-size: 8px;
+    }
+    .name_pan img{
+        width: 20px;
+    }
+    .kategori{
+        padding: 11px 13px;
+    font-size: 10px;}
+    .pagi{
+        font-size: 10px;
+        margin: 30px 0 30px 0;
+    }
+    .pagi p:hover{
+        font-size: 12px;
+    }
+    
+.forma{
+    max-width: 270px;
+}
+#formp{
+    font-size: 15px;
+    margin: 20px 0 20px 0;
+
+}
+
+#red{
+    gap: 9px;
+   
+   
+}
+#red  input{
+    
+    padding: 9px 0;
+   
+    font-size: 9px;
+    
+}
+
+#red p{
+    font-size: 9px;
+
+}
+#sohr{
+    font-size: 15px;
+    padding: 8px;
+    margin: 17px 0;
+
+}
+#vhod{
+    font-size: 15px;
+    padding: 10px;
+    margin: 17px 0 7px 0;
+}
+.pv{
+    font-size: 10px;
+    margin-bottom: 28px;
+}
+   
+}
